@@ -1,0 +1,47 @@
+.hero{
+    height: auto;
+    display: flex;
+}
+
+.hero-left{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 130px;
+}
+
+.hero-left h2{
+    font-size: 3rem;
+}
+
+.hero-left p{
+    font-size: 1.5rem;
+}
+
+.hero-arrow-btn:last-child{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.hero-right img{
+    animation: 30s linear 0s normal none infinite running rot;
+    -webkit-animation: 30s linear 0s normal none infinite running rot;
+}
+
+  @keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
