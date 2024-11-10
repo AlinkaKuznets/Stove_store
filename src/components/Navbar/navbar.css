@@ -24,6 +24,11 @@
     font-weight: 300;
 }
 
+.nav-menu .a{
+    cursor: pointer;
+
+}
+
 .nav-menu hr{
     border: none;
     width: 80%;
