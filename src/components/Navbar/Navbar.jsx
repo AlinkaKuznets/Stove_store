@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './navbar.css'
-import { CiForkAndKnife } from "react-icons/ci";
-import { FaShoppingCart } from "react-icons/fa";
+import logo from '../Assets/logo.png';
+import { IoCartOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
@@ -11,7 +11,7 @@ export const Navbar = () => {
   return (
     <div className='navbar'>
       <div className='nav-logo'>
-        <CiForkAndKnife className='ci-1' />
+        <img src={logo} alt=''/>
         <h1>Печка</h1>
       </div>
       <ul className='nav-menu'>
@@ -23,7 +23,7 @@ export const Navbar = () => {
       </ul>
       <div className='nav-login-cart'>
         <Link to='/login'><button>Войти</button></Link>
-        <Link to='/cart'><FaShoppingCart className='fa-1' /></Link>
+        <Link to='/cart'><IoCartOutline className='fa-1' /></Link>
       </div>
     </div>
   )

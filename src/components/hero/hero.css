@@ -1,3 +1,11 @@
+:root {
+    --bg-color: #dcdcdb;
+    --text-color: #000000;
+    --accent-color: #da2222;
+    --contrast-color: #8dde98;
+    --orange-color: #de8951;
+}
+
 .hero{
     height: auto;
     display: flex;
@@ -19,9 +27,15 @@
     font-size: 1.5rem;
 }
 
-.hero-arrow-btn:last-child{
+.hero-arrow-btn svg{
     font-size: 3rem;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.hero-arrow-btn svg:hover{
+    color: var(--accent-color);
+    transform: scale(1.15);
 }
 
 .hero-right img{
